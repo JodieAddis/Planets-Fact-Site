@@ -4,7 +4,7 @@ const Page = () => {
   return (
     <>
       <NavBar />
-      <h1>Welcome Home</h1>
+      <h1>MARS</h1>
     </>
   );
 };
