@@ -1,16 +1,18 @@
-import { Routes, Route } from "react-router-dom";
-import NavBar from "./components/NavBar/index";
-import Home from "./pages/Home";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MercuryPage from "./pages/MercuryPage";
 import Venus from "./pages/Venus";
 import Earth from "./pages/Earth";
 import Mars from "./pages/Mars";
 import Jupiter from "./pages/Jupiter";
 import Saturn from "./pages/Saturn";
+import Uranus from "./pages/Uranus";
+import Neptune from "./pages/Neptune";
 
-function App() {
-  return (
-    <>
+ReactDOM.createRoot(document.getElementById("root")!).render(
+  <React.StrictMode>
+    <BrowserRouter>
       <div>
         <Routes>
           <Route path="/Planets-Fact-Site/" element={<MercuryPage />} />
@@ -19,11 +21,11 @@ function App() {
           <Route path="/Planets-Fact-Site/mars" element={<Mars />} />
           <Route path="/Planets-Fact-Site/jupiter" element={<Jupiter />} />
           <Route path="/Planets-Fact-Site/saturn" element={<Saturn />} />
+          <Route path="/Planets-Fact-Site/uranus" element={<Uranus />} />
+          <Route path="/Planets-Fact-Site/neptune" element={<Neptune />} />
           {/* <Route path="*" element={<Error404 />} /> */}
         </Routes>
       </div>
-    </>
-  );
-}
-
-export default App;
+    </BrowserRouter>
+  </React.StrictMode>,
+);
