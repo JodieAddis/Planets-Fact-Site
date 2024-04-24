@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Antonio;
+  src: url("../font/Antonio-Regular.ttf");
+}
+
+@font-face {
+  font-family: Spartan;
+  src: url("../font/LeagueSpartan-Regular.ttf");
+}
+
+@layer base {
+  html {
+    @apply h-screen;
+  }
+  body {
+    @apply bg-BlackPearl text-white;
+  }
+}
+
+@layer components {
+  .navbar_list {
+    @apply text-xs font-bold text-white;
+  }
+  .details_box {
+    @apply mb-2 flex h-[48px] w-[327px] flex-row items-center border-[1px] border-solid border-white px-5 text-left md:mx-3 md:mb-0 md:h-[80px] md:flex-col lg:w-[255px];
+  }
+  .details_box_heading {
+    @apply font-Spartan text-xs font-bold uppercase md:text-sm;
+  }
+  .details_box_text {
+    @apply font-Antonio text-xl uppercase md:text-4xl;
+  }
+  .button_view {
+    @apply font-Spartan hover:border-BrightGray hover:bg-BrightGray mb-3 ml-4 border-[1px] border-solid border-white pl-5 text-left text-[9px] uppercase lg:h-[40px] lg:w-[281px];
+  }
+}

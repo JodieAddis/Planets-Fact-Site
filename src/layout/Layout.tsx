@@ -9,7 +9,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <header>
+      <header className="border-b-solid border-b-[1px] border-b-white pb-6">
         <Header />
       </header>
       <main>{children}</main>

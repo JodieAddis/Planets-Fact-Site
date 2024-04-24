@@ -6,7 +6,7 @@ import * as data from "../../../data/planets.json";
 const Component = () => {
   return (
     <div className="flex flex-col">
-      <section className="flex justify-center lg:flex-row">
+      <section className="flex justify-center lg:mb-20 lg:flex-row">
         <div>
           <PlanetDescription
             name={"mercury"}
@@ -16,23 +16,23 @@ const Component = () => {
           <div className="flex flex-col">
             <Button
               content="01 overview"
-              css="uppercase text-left ml-4"
+              css="button_view bg-Pelorous"
               onclick={() => {}}
             />
             <Button
               content="02 internal structure"
-              css="uppercase text-left ml-4 "
+              css="button_view"
               onclick={() => {}}
             />
             <Button
               content="03 surface geology"
-              css="uppercase text-left ml-4 "
+              css="button_view"
               onclick={() => {}}
             />
           </div>
         </div>
       </section>
-      <section className="flex flex-col lg:flex-row">
+      <section className="flex flex-col items-center lg:flex-row">
         <PlanetDetails
           rotationTime={"56.6"}
           revolutionTime={"87.97"}

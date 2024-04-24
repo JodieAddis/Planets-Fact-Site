@@ -7,7 +7,7 @@ const Component = () => {
       <Heading
         kind="h1"
         content={"the planets"}
-        css={"ml-8 uppercase font-base text-3xl"}
+        css={"ml-8 uppercase font-base text-3xl font-Antonio"}
       />
       <NavBar />
     </div>

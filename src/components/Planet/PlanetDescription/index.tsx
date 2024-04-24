@@ -1,3 +1,4 @@
+import IconSource from "../../../icons/IconSource";
 import Heading from "../../../typographies/Heading";
 import Paragraph from "../../../typographies/Paragraph";
 
@@ -11,7 +12,7 @@ const Component = ({ name, description, source }: PlanetDescriptionProps) => {
   return (
     <div className="flex lg:flex-row">
       <div className="flex items-center">
-        <p>IMAGE</p>
+        <p className="text-Valencia">IMAGE</p>
       </div>
       <div>
         <Heading
@@ -19,14 +20,21 @@ const Component = ({ name, description, source }: PlanetDescriptionProps) => {
           content={name}
           css={"font-base lg:text-8xl mb-4 uppercase"}
         />
-        <Paragraph content={description} css={"text-sm w-[350px] mb-4"} />
+        <Paragraph
+          content={description}
+          css={"text-sm w-[327px] text-center md:text-left md:w-[350px] mb-4"}
+        />
         <Paragraph
           content={
             <>
-              Source <a href={source}>Wikipedia</a>
+              Source{" "}
+              <a href={source} className="mx-2">
+                Wikipedia
+              </a>
+              <IconSource />
             </>
           }
-          css={"text-sm mb-4"}
+          css={"text-sm mb-4 flex flex-row items-center"}
         />
       </div>
     </div>
