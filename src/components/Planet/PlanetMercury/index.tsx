@@ -1,13 +1,18 @@
 import Button from "../../Button";
 import PlanetDescription from "../PlanetDescription";
 import PlanetDetails from "../PlanetDetails";
+import * as data from "../../../data/planets.json";
 
 const Component = () => {
   return (
     <div className="flex flex-col">
-      <section className="flex lg:flex-row">
+      <section className="flex justify-center lg:flex-row">
         <div>
-          <PlanetDescription />
+          <PlanetDescription
+            name={"mercury"}
+            description={"blabla"}
+            source={"blabla"}
+          />
           <div className="flex flex-col">
             <Button
               content="01 overview"
@@ -28,10 +33,12 @@ const Component = () => {
         </div>
       </section>
       <section className="flex flex-col lg:flex-row">
-        <PlanetDetails text={"rotation time"} numberDays={"100"} />
-        <PlanetDetails text={"revolution tile"} numberDays={"100"} />
-        <PlanetDetails text={"radius"} numberDays={"100"} />
-        <PlanetDetails text={"average temp."} numberDays={"100"} />
+        <PlanetDetails
+          rotationTime={"56.6"}
+          revolutionTime={"87.97"}
+          radius={"2,439.7"}
+          averageTemp={"430"}
+        />
       </section>
     </div>
   );

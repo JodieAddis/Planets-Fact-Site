@@ -2,20 +2,47 @@ import Heading from "../../../typographies/Heading";
 import Paragraph from "../../../typographies/Paragraph";
 
 interface DetailsProps {
-  text: string;
-  numberDays: string;
+  rotationTime: string;
+  revolutionTime: string;
+  radius: string;
+  averageTemp: string;
 }
 
-const Component = ({ text, numberDays }: DetailsProps) => {
+const Component = ({
+  rotationTime,
+  revolutionTime,
+  radius,
+  averageTemp,
+}: DetailsProps) => {
   return (
     <>
-      <div className="border-[1px] border-solid border-black pb-5 pl-3 pt-3 text-left lg:w-[255px]">
+      <div className="details_box">
         <Heading
           kind={"h3"}
-          content={text}
-          css={"uppercase font-bold text-sm"}
+          content={"rotation time"}
+          css={"details_box_heading"}
         />
-        <Paragraph content={numberDays} css={"uppercase text-4xl font-base"} />
+        <Paragraph content={rotationTime} css={"details_box_text"} />
+      </div>
+      <div className="details_box">
+        <Heading
+          kind={"h3"}
+          content={"revolution tile"}
+          css={"details_box_heading"}
+        />
+        <Paragraph content={revolutionTime} css={"details_box_text"} />
+      </div>
+      <div className="details_box">
+        <Heading kind={"h3"} content={"radius"} css={"details_box_heading"} />
+        <Paragraph content={radius} css={"details_box_text"} />
+      </div>
+      <div className="details_box">
+        <Heading
+          kind={"h3"}
+          content={"average temp."}
+          css={"details_box_heading"}
+        />
+        <Paragraph content={averageTemp} css={"details_box_text"} />
       </div>
     </>
   );
