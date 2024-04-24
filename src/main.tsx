@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MercuryPage from "./pages/MercuryPage";
+import Mercury from "./pages/Mercury";
 import Venus from "./pages/Venus";
 import Earth from "./pages/Earth";
 import Mars from "./pages/Mars";
@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <div>
         <Routes>
-          <Route path="/Planets-Fact-Site/" element={<MercuryPage />} />
+          <Route path="/Planets-Fact-Site/" element={<Mercury />} />
           <Route path="/Planets-Fact-Site/venus" element={<Venus />} />
           <Route path="/Planets-Fact-Site/earth" element={<Earth />} />
           <Route path="/Planets-Fact-Site/mars" element={<Mars />} />
