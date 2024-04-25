@@ -1,11 +1,13 @@
-import React from "react";
 import Layout from "../layout/Layout";
+import PlanetContainer from "../components/Planet/PlanetContainer";
 
 const Page = () => {
   return (
     <>
       <Layout>
-        <h1 className="text-center text-5xl font-bold uppercase">venus</h1>
+        <div className="flex h-screen items-center justify-center">
+          <PlanetContainer planetName={"venus"} />
+        </div>
       </Layout>
     </>
   );

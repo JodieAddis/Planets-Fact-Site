@@ -1,13 +1,12 @@
-import React from "react";
 import Layout from "../layout/Layout";
-import PlanetMercury from "../components/Planet/PlanetMercury";
+import PlanetContainer from "../components/Planet/PlanetContainer";
 
 const Page = () => {
   return (
     <>
       <Layout>
         <div className="flex h-screen items-center justify-center">
-          <PlanetMercury />
+          <PlanetContainer planetName={"mercury"} />
         </div>
       </Layout>
     </>

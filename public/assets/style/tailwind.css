@@ -25,16 +25,22 @@
   .navbar_list {
     @apply text-xs font-bold text-white;
   }
+  .navbar_list_mobile {
+    @apply font-Spartan text-base font-bold tracking-widest text-white;
+  }
+  .list_mobile_container {
+    @apply flex flex-row justify-between py-2;
+  }
   .details_box {
-    @apply mb-2 flex h-[48px] w-[327px] flex-row items-center border-[1px] border-solid border-white px-5 text-left md:mx-3 md:mb-0 md:h-[80px] md:flex-col lg:w-[255px];
+    @apply mb-2 flex h-[48px] w-[327px] flex-row items-center justify-between border-[1px] border-solid border-white px-5 text-left md:mx-3 md:mb-0 md:h-[80px] md:flex-col lg:w-[255px];
   }
   .details_box_heading {
-    @apply font-Spartan text-xs font-bold uppercase md:text-sm;
+    @apply font-Spartan text-[8px] font-bold uppercase tracking-widest md:text-sm;
   }
   .details_box_text {
     @apply font-Antonio text-xl uppercase md:text-4xl;
   }
   .button_view {
-    @apply font-Spartan hover:border-BrightGray hover:bg-BrightGray mb-3 ml-4 border-[1px] border-solid border-white pl-5 text-left text-[9px] uppercase lg:h-[40px] lg:w-[281px];
+    @apply mb-3 ml-4 border-[1px] border-solid border-white pl-5 text-left font-Spartan text-[9px] uppercase hover:border-BrightGray hover:bg-BrightGray lg:h-[40px] lg:w-[281px];
   }
 }
