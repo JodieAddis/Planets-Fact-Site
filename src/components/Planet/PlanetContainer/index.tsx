@@ -1,18 +1,26 @@
 import Button from "../../Button";
+import { loadData } from "../../../utils/loadData";
 import PlanetDescription from "../PlanetDescription";
 import PlanetDetails from "../PlanetDetails";
-import * as data from "../../../data/planets.json";
 
-const Component = () => {
+interface PlanetDataProps {
+  planetName: string;
+}
+
+const Component = ({ planetName }: PlanetDataProps) => {
+  const planetData = loadData(planetName);
   return (
     <div className="flex flex-col">
       <section className="flex justify-center lg:mb-20 lg:flex-row">
         <div>
-          <PlanetDescription
-            name={"mercury"}
-            description={"blabla"}
-            source={"blabla"}
-          />
+          {planetData && (
+            <PlanetDescription
+              name={planetData.name}
+              description={planetData.description}
+              source={planetData.source}
+            />
+          )}
+
           <div className="flex flex-col">
             <Button
               content="01 overview"
@@ -33,12 +41,14 @@ const Component = () => {
         </div>
       </section>
       <section className="flex flex-col items-center lg:flex-row">
-        <PlanetDetails
-          rotationTime={"56.6"}
-          revolutionTime={"87.97"}
-          radius={"2,439.7"}
-          averageTemp={"430"}
-        />
+        {planetData && (
+          <PlanetDetails
+            rotationTime={planetData.rotation_time}
+            revolutionTime={planetData.revolution_time}
+            radius={planetData.radius}
+            averageTemp={planetData.average_temp}
+          />
+        )}
       </section>
     </div>
   );

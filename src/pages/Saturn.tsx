@@ -1,11 +1,14 @@
-import React from "react";
-import NavBar from "../components/NavBar";
+import Layout from "../layout/Layout";
+import PlanetContainer from "../components/Planet/PlanetContainer";
 
 const Page = () => {
   return (
     <>
-      <NavBar />
-      <h1>SATURN</h1>
+      <Layout>
+        <div className="flex h-screen items-center justify-center">
+          <PlanetContainer planetName={"saturn"} />
+        </div>
+      </Layout>
     </>
   );
 };
