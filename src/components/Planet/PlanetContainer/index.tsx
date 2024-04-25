@@ -18,9 +18,9 @@ const Component = ({ planetName }: PlanetDataProps) => {
               name={planetData.name}
               description={planetData.description}
               source={planetData.source}
+              url={`../../../../Planets-Fact-Site/public/assets/img/${planetName}.svg`}
             />
           )}
-
           <div className="flex flex-col">
             <Button
               content="01 overview"

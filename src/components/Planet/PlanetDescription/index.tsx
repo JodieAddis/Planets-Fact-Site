@@ -6,13 +6,19 @@ interface PlanetDescriptionProps {
   name: string;
   description: string;
   source: string;
+  url: string;
 }
 
-const Component = ({ name, description, source }: PlanetDescriptionProps) => {
+const Component = ({
+  name,
+  description,
+  source,
+  url,
+}: PlanetDescriptionProps) => {
   return (
     <div className="flex lg:flex-row">
       <div className="flex items-center">
-        <p className="text-Valencia">IMAGE</p>
+        <img src={url} alt="planet image" />
       </div>
       <div>
         <Heading
