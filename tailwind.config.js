@@ -15,6 +15,11 @@ export default {
         Piper: "#cd5120", //orange
         Java: "#1ec2a4", //turquoise
         RoyalBlue: "#2d68f0",
+        royalBlue: "#2D68F0",
+        Tacao: "#ECAD7A", //jupiter
+        Goldenrod: "#FCCB6B", //saturn
+        Foam: "#DEF4FC", //mercury
+        GlacialBlue: "#545bfe",
       },
       fontFamily: {
         Antonio: ["Antonio"],

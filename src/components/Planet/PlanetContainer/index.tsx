@@ -2,6 +2,7 @@ import Button from "../../Button";
 import { loadData } from "../../../utils/loadData";
 import PlanetDescription from "../PlanetDescription";
 import PlanetDetails from "../PlanetDetails";
+import useScreenSize from "../../../hook/useScreenSize";
 
 interface PlanetDataProps {
   planetName: string;
@@ -9,6 +10,7 @@ interface PlanetDataProps {
 
 const Component = ({ planetName }: PlanetDataProps) => {
   const planetData = loadData(planetName);
+  const isMobile = useScreenSize();
   return (
     <div className="flex flex-col">
       <section className="flex justify-center lg:mb-20 lg:flex-row">
@@ -21,26 +23,30 @@ const Component = ({ planetName }: PlanetDataProps) => {
               url={`../../../../Planets-Fact-Site/public/assets/img/${planetName}.svg`}
             />
           )}
-          <div className="flex flex-col">
-            <Button
-              content="01 overview"
-              css="button_view bg-Pelorous"
-              onclick={() => {}}
-            />
-            <Button
-              content="02 internal structure"
-              css="button_view"
-              onclick={() => {}}
-            />
-            <Button
-              content="03 surface geology"
-              css="button_view"
-              onclick={() => {}}
-            />
-          </div>
+          {isMobile ? (
+            <></>
+          ) : (
+            <div className="flex flex-col">
+              <Button
+                content="01 overview"
+                css="button_view bg-Pelorous"
+                onclick={() => {}}
+              />
+              <Button
+                content="02 internal structure"
+                css="button_view"
+                onclick={() => {}}
+              />
+              <Button
+                content="03 surface geology"
+                css="button_view"
+                onclick={() => {}}
+              />
+            </div>
+          )}
         </div>
       </section>
-      <section className="flex flex-col items-center lg:flex-row">
+      <section className="mt-6 flex flex-col items-center lg:flex-row">
         {planetData && (
           <PlanetDetails
             rotationTime={planetData.rotation_time}

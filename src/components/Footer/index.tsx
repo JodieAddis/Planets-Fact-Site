@@ -16,7 +16,7 @@ const Component = () => {
             </a>
           </>
         }
-        css={"text-xs text-center"}
+        css={"text-xs font-Spartan tracking-widest text-center"}
       />
     </>
   );

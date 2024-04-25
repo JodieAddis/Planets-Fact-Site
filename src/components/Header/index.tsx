@@ -1,15 +1,18 @@
 import Heading from "../../typographies/Heading";
-import NavBar from "../NavBar";
+import NavBarDesktop from "../NavBar/NavBarDesktop";
+import NavBarMobile from "../NavBar/NavBarMobile";
+import useScreenSize from "../../hook/useScreenSize";
 
 const Component = () => {
+  const isMobile = useScreenSize();
   return (
-    <div className="flex justify-between md:mt-8 md:flex-row">
+    <div className="mt-6 flex justify-between md:mt-8 md:flex-row">
       <Heading
         kind="h1"
         content={"the planets"}
         css={"ml-8 uppercase font-base text-3xl font-Antonio"}
       />
-      <NavBar />
+      {isMobile ? <NavBarMobile /> : <NavBarDesktop />}
     </div>
   );
 };
