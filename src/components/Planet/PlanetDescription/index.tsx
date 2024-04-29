@@ -17,7 +17,7 @@ const Component = ({
 }: PlanetDescriptionProps) => {
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="my-20 flex items-center justify-center">
+      <div className="mb-10 flex items-center justify-center">
         <img src={url} alt="planet image" className="w-1/3" />
       </div>
       <div className="flex flex-col items-center">

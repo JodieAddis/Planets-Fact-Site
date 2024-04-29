@@ -41,6 +41,33 @@
     @apply font-Antonio text-xl uppercase md:text-4xl;
   }
   .button_view {
-    @apply mb-3 ml-4 border-[1px] border-solid border-white pl-5 text-left font-Spartan text-[9px] uppercase hover:border-BrightGray hover:bg-BrightGray lg:h-[40px] lg:w-[281px];
+    @apply mb-3 ml-4 border-[1px] border-solid border-white pl-5 text-left font-Spartan text-[9px] uppercase tracking-widest hover:border-BrightGray hover:bg-BrightGray lg:h-[40px] lg:w-[281px];
+  }
+  .button_view_mobile {
+    @apply border-b-4 border-solid border-BlackPearl pb-4 pt-5 font-Spartan text-xs font-bold uppercase tracking-widest text-white;
+  }
+  .mercury {
+    @apply hover:border-b-Pelorous;
+  }
+  .venus {
+    @apply hover:border-b-TulipTree;
+  }
+  .earth {
+    @apply hover:border-b-PurpleHeart;
+  }
+  .mars {
+    @apply hover:border-b-Valencia;
+  }
+  .jupiter {
+    @apply hover:border-b-ElectricValencia;
+  }
+  .saturn {
+    @apply hover:border-b-Piper;
+  }
+  .uranus {
+    @apply hover:border-b-Java;
+  }
+  .neptune {
+    @apply hover:border-b-RoyalBlue;
   }
 }

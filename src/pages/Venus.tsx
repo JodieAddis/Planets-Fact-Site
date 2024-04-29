@@ -5,9 +5,7 @@ const Page = () => {
   return (
     <>
       <Layout>
-        <div className="flex h-screen items-center justify-center">
-          <PlanetContainer planetName={"venus"} />
-        </div>
+        <PlanetContainer planetName={"venus"} />
       </Layout>
     </>
   );

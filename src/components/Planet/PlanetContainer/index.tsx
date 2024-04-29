@@ -3,6 +3,7 @@ import { loadData } from "../../../utils/loadData";
 import PlanetDescription from "../PlanetDescription";
 import PlanetDetails from "../PlanetDetails";
 import useScreenSize from "../../../hook/useScreenSize";
+import PlanetViewMobile from "../../PlanetView/PlanetViewMobile";
 
 interface PlanetDataProps {
   planetName: string;
@@ -13,7 +14,10 @@ const Component = ({ planetName }: PlanetDataProps) => {
   const isMobile = useScreenSize();
   return (
     <div className="flex flex-col">
-      <section className="flex justify-center lg:mb-20 lg:flex-row">
+      <section className="flex flex-col justify-center lg:mb-20 lg:flex-row">
+        <div className="mb-14 flex flex-col justify-center">
+          <PlanetViewMobile color={planetName} />
+        </div>
         <div>
           {planetData && (
             <PlanetDescription
