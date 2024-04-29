@@ -2,8 +2,9 @@ import Button from "../../Button";
 import { loadData } from "../../../utils/loadData";
 import PlanetDescription from "../PlanetDescription";
 import PlanetDetails from "../PlanetDetails";
-import useScreenSize from "../../../hook/useScreenSize";
 import PlanetViewMobile from "../../PlanetView/PlanetViewMobile";
+import useScreenSize from "../../../hook/useScreenSize";
+import { useState } from "react";
 
 interface PlanetDataProps {
   planetName: string;
@@ -12,11 +13,35 @@ interface PlanetDataProps {
 const Component = ({ planetName }: PlanetDataProps) => {
   const planetData = loadData(planetName);
   const isMobile = useScreenSize();
+  const [selectedView, setSelectedView] = useState<string>("");
+  const [imgUrl, setImgUrl] = useState<string>("");
+
+  const handleViewSelect = (view: string) => {
+    setSelectedView(view);
+    handleImgDisplay(view);
+  };
+
+  const handleImgDisplay = (view: string) => {
+    let imageUrl = `../../../../Planets-Fact-Site/public/assets/img/${planetName}.svg`;
+    if (view === "overview") {
+      imageUrl = `../../../../Planets-Fact-Site/public/assets/img/${planetName}.svg`;
+    } else if (view === "structure") {
+      imageUrl = `../../../../Planets-Fact-Site/public/assets/img/planet-${planetName}-internal.svg`;
+    } else if (view === "surface") {
+      imageUrl = `../../../../Planets-Fact-Site/public/assets/img/geology-${planetName}.png`;
+    }
+
+    setImgUrl(imageUrl);
+  };
+
   return (
     <div className="flex flex-col">
       <section className="flex flex-col justify-center lg:mb-20 lg:flex-row">
         <div className="mb-14 flex flex-col justify-center">
-          <PlanetViewMobile color={planetName} />
+          <PlanetViewMobile
+            color={planetName}
+            onViewSelect={handleViewSelect}
+          />
         </div>
         <div>
           {planetData && (
@@ -24,7 +49,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
               name={planetData.name}
               description={planetData.description}
               source={planetData.source}
-              url={`../../../../Planets-Fact-Site/public/assets/img/${planetName}.svg`}
+              url={imgUrl}
             />
           )}
           {isMobile ? (
