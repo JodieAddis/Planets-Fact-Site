@@ -32,13 +32,13 @@
     @apply flex flex-row justify-between py-2;
   }
   .details_box {
-    @apply mb-2 flex h-[48px] w-[327px] flex-row items-center justify-between border-[1px] border-solid border-white px-5 text-left md:mx-3 md:mb-0 md:h-[80px] md:flex-col lg:w-[255px];
+    @apply mb-2 flex w-[327px] flex-row items-center justify-between border-[1px] border-solid border-white px-5 py-4 text-left lg:mx-4 lg:w-[255px] lg:flex-col lg:items-start lg:py-6;
   }
   .details_box_heading {
     @apply font-Spartan text-[8px] font-bold uppercase tracking-widest md:text-sm;
   }
   .details_box_text {
-    @apply font-Antonio text-xl uppercase md:text-4xl;
+    @apply font-Antonio text-xl uppercase lg:text-4xl;
   }
   .button_view {
     @apply mb-3 ml-4 border-[1px] border-solid border-white pl-5 text-left font-Spartan text-[9px] uppercase tracking-widest hover:border-BrightGray hover:bg-BrightGray lg:h-[40px] lg:w-[281px];

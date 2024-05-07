@@ -18,14 +18,26 @@ const Component = () => {
       ) : (
         <nav className="absolute top-32 h-screen w-screen bg-BlackPearl">
           <ul className="mx-6 flex flex-col uppercase text-black">
-            <NavBarItem name={"mercury"} color={"Foam"} page={""} />
-            <NavBarItem name={"venus"} color={"TulipTree"} page={"venus"} />
-            <NavBarItem name={"earth"} color={"GlacialBlue"} page={"earth"} />
-            <NavBarItem name={"mars"} color={"Piper"} page={"mars"} />
-            <NavBarItem name={"jupiter"} color={"Tacao"} page={"jupiter"} />
-            <NavBarItem name={"saturn"} color={"Goldenrod"} page={"saturn"} />
-            <NavBarItem name={"uranus"} color={"Java"} page={"uranus"} />
-            <NavBarItem name={"neptune"} color={"RoyalBlue"} page={"neptune"} />
+            <NavBarItem name={"mercury"} color={"bg-Pelorous"} page={""} />
+            <NavBarItem name={"venus"} color={"bg-TulipTree"} page={"venus"} />
+            <NavBarItem
+              name={"earth"}
+              color={"bg-GlacialBlue"}
+              page={"earth"}
+            />
+            <NavBarItem name={"mars"} color={"bg-Piper"} page={"mars"} />
+            <NavBarItem name={"jupiter"} color={"bg-Tacao"} page={"jupiter"} />
+            <NavBarItem
+              name={"saturn"}
+              color={"bg-Goldenrod"}
+              page={"saturn"}
+            />
+            <NavBarItem name={"uranus"} color={"bg-Java"} page={"uranus"} />
+            <NavBarItem
+              name={"neptune"}
+              color={"bg-RoyalBlue"}
+              page={"neptune"}
+            />
           </ul>
         </nav>
       )}

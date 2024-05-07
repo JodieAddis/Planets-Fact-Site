@@ -14,7 +14,7 @@ const Layout = ({ children }: LayoutProps) => {
         <div className="border-b-solid border-b-[1px] border-b-white pb-6"></div>
       </header>
       <main className="flex items-center justify-center">{children}</main>
-      <footer className="flex h-10 items-center justify-center pt-20">
+      <footer className="mb-12 mt-20 flex h-10 items-center justify-center">
         <Footer />
       </footer>
     </>
