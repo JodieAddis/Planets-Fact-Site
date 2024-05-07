@@ -6,7 +6,7 @@ import useScreenSize from "../../hook/useScreenSize";
 const Component = () => {
   const isMobile = useScreenSize();
   return (
-    <div className="mt-6 flex justify-between md:mt-8 md:flex-row">
+    <div className="flex justify-between md:flex-col lg:flex-row">
       <Heading
         kind="h1"
         content={"the planets"}

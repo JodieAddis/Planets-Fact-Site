@@ -1,4 +1,4 @@
-import planetsData from "../data/planets.json";
+import planetsData from "../data/data.json";
 
 export const loadData = (name: string) => {
   const planet = planetsData.find(
