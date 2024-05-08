@@ -32,7 +32,7 @@ const Component = ({ onViewSelect, color }: ViewProps) => {
           <Button
             content={tab}
             css={`
-              ${selectedTab === index ? "bg-Pelorous" : "bg-none"} button_view
+              ${selectedTab === index ? color : "bg-none"} button_view
             `}
             onclick={() => {
               handleButtonClick(tab);

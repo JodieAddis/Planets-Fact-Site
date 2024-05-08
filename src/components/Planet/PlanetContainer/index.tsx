@@ -24,6 +24,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
   let description = planetData.overview.content;
   let url = planetData.images.planet;
   let source = planetData.overview.source;
+  let pinUrl = "";
 
   if (planetData) {
     if (selectedView === "structure") {
@@ -34,6 +35,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
       description = planetData.geology.content;
       url = planetData.images.geology;
       source = planetData.geology.source;
+      pinUrl = planetData.images.planet;
     }
   }
 
@@ -52,7 +54,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
         </div>
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center">
           <div className="lg:mr-16">
-            <PlanetImage view={selectedView} url={url} />
+            <PlanetImage view={selectedView} url={url} pinUrl={pinUrl} />
           </div>
 
           <div className="flex flex-col lg:ml-16">

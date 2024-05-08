@@ -47,27 +47,27 @@
     @apply border-b-4 border-solid border-BlackPearl pb-4 pt-5 font-Spartan text-xs font-bold uppercase tracking-widest text-white;
   }
   .mercury {
-    @apply border-b-Pelorous;
+    @apply border-b-Pelorous lg:border-none lg:bg-Pelorous;
   }
   .venus {
-    @apply border-b-TulipTree;
+    @apply border-b-TulipTree lg:border-none lg:bg-TulipTree;
   }
   .earth {
-    @apply border-b-PurpleHeart;
+    @apply border-b-PurpleHeart lg:border-none lg:bg-PurpleHeart;
   }
   .mars {
-    @apply border-b-Valencia;
+    @apply border-b-Valencia lg:border-none lg:bg-Valencia;
   }
   .jupiter {
-    @apply border-b-ElectricValencia;
+    @apply border-b-ElectricValencia lg:border-none lg:bg-ElectricValencia;
   }
   .saturn {
-    @apply border-b-Piper;
+    @apply border-b-Piper lg:border-none lg:bg-Piper;
   }
   .uranus {
-    @apply border-b-Java;
+    @apply border-b-Java lg:border-none lg:bg-Java;
   }
   .neptune {
-    @apply border-b-RoyalBlue;
+    @apply border-b-RoyalBlue lg:border-none lg:bg-RoyalBlue;
   }
 }

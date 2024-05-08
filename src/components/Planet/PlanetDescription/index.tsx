@@ -1,6 +1,7 @@
 import IconSource from "../../../icons/IconSource";
 import Heading from "../../../typographies/Heading";
 import Paragraph from "../../../typographies/Paragraph";
+import { loadData } from "../../../utils/loadData";
 
 interface PlanetDescriptionProps {
   name: string;
@@ -29,14 +30,18 @@ const Component = ({ name, description, source }: PlanetDescriptionProps) => {
           content={
             <>
               Source :{" "}
-              <a href={source} target="_blank" className="mx-2 underline">
+              <a
+                href={source}
+                target="_blank"
+                className="mx-2 text-white text-opacity-50 underline"
+              >
                 Wikipedia
               </a>
               <IconSource />
             </>
           }
           css={
-            "text-xs mb-4 flex flex-row items-center justify-center text-center"
+            "text-xs mb-4 flex flex-row items-center justify-center text-center text-white text-opacity-50"
           }
         />
       </div>
