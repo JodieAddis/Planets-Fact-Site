@@ -11,30 +11,7 @@ interface PlanetDescriptionProps {
 const Component = ({ name, description, source }: PlanetDescriptionProps) => {
   return (
     <div className="flex flex-col lg:flex-row">
-      {/* <div className="mb-10 flex items-center justify-center">
-        {view == "" && <img src={url} alt="planet image" className="w-1/3" />}
-        {view == "overview" && (
-          <img src={url} alt="planet image" className="w-1/3" />
-        )}
-        {view == "structure" && (
-          <img src={url} alt="planet image" className="w-1/3" />
-        )}
-        {view == "surface" && (
-          <div className="relative pb-10">
-            <img
-              src={`../../../../public/assets/img/${name}.svg`}
-              alt="planet image"
-              className="mx-auto w-1/3"
-            />
-            <img
-              src={`../../../../public/assets/img/geology-${name}.png`}
-              alt="planet image"
-              className="mx-auto w-1/6"
-            />
-          </div>
-        )}
-      </div> */}
-      <div className="flex flex-col items-center lg:items-start">
+      <div className="flex flex-col items-center lg:w-[350px] lg:items-start">
         <Heading
           kind={"h2"}
           content={name}
@@ -45,7 +22,7 @@ const Component = ({ name, description, source }: PlanetDescriptionProps) => {
         <Paragraph
           content={description}
           css={
-            "text-xs lg:text-sm font-normal leading-normal w-[327px] font-Spartan text-center lg:text-left lg:w-[340px] mb-4 lg:mb-8 lg:text-left"
+            "text-xs lg:text-sm font-normal leading-normal w-[327px] font-Spartan text-center lg:text-left lg:w-content mb-4 lg:mb-8 lg:text-left"
           }
         />
         <Paragraph

@@ -17,7 +17,7 @@
     @apply h-screen;
   }
   body {
-    @apply bg-BlackPearl text-white;
+    @apply bg-BlackPearl bg-[url('../img/background-stars.svg')] bg-cover text-white;
   }
 }
 
@@ -41,7 +41,7 @@
     @apply font-Antonio text-xl uppercase lg:text-4xl;
   }
   .button_view {
-    @apply mb-3 ml-4 border-[1px] border-solid border-white pl-5 text-left font-Spartan text-[9px] uppercase tracking-widest hover:border-BrightGray hover:bg-BrightGray lg:h-[40px] lg:w-[281px];
+    @apply mb-3 border-[1px] border-solid border-white pl-5 text-left font-Spartan text-[9px] uppercase tracking-widest hover:border-BrightGray hover:bg-BrightGray lg:h-[40px] lg:w-[350px];
   }
   .button_view_mobile {
     @apply border-b-4 border-solid border-BlackPearl pb-4 pt-5 font-Spartan text-xs font-bold uppercase tracking-widest text-white;

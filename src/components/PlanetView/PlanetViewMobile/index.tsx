@@ -1,11 +1,7 @@
 import Button from "../../Button";
+import { ViewProps } from "../../../types/interface";
 
-interface ViewMobileProps {
-  color: string;
-  onViewSelect: (view: string) => void;
-}
-
-const Component = ({ color, onViewSelect }: ViewMobileProps) => {
+const Component = ({ color, onViewSelect }: ViewProps) => {
   const handleButtonClick = (image: string) => {
     onViewSelect(image);
   };
