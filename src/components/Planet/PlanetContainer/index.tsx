@@ -6,6 +6,7 @@ import PlanetViewMobile from "../../PlanetView/PlanetViewMobile";
 import useScreenSize from "../../../hook/useScreenSize";
 import { useState } from "react";
 import PlanetImage from "../PlanetImage";
+import PlanetViewDesktop from "../../PlanetView/PlanetViewDesktop";
 
 interface PlanetDataProps {
   planetName: string;
@@ -23,6 +24,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
   let description = planetData.overview.content;
   let url = planetData.images.planet;
   let source = planetData.overview.source;
+  let pinUrl = "";
 
   if (planetData) {
     if (selectedView === "structure") {
@@ -33,12 +35,13 @@ const Component = ({ planetName }: PlanetDataProps) => {
       description = planetData.geology.content;
       url = planetData.images.geology;
       source = planetData.geology.source;
+      pinUrl = planetData.images.planet;
     }
   }
 
   return (
     <div className="flex flex-col">
-      <section className="flex flex-col justify-center lg:mb-20 lg:mt-10 lg:flex-row">
+      <section className="flex flex-col justify-center lg:mb-20 lg:mt-32 lg:flex-row">
         <div className="mb-14 flex flex-col justify-center">
           {isMobile ? (
             <PlanetViewMobile
@@ -50,11 +53,11 @@ const Component = ({ planetName }: PlanetDataProps) => {
           )}
         </div>
         <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center">
-          <div>
-            <PlanetImage view={selectedView} url={url} />
+          <div className="lg:mr-16">
+            <PlanetImage view={selectedView} url={url} pinUrl={pinUrl} />
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col lg:ml-16">
             {planetData && (
               <PlanetDescription
                 name={planetData.name}
@@ -65,21 +68,10 @@ const Component = ({ planetName }: PlanetDataProps) => {
             {isMobile ? (
               <></>
             ) : (
-              <div className="flex flex-col">
-                <Button
-                  content="01 overview"
-                  css="button_view bg-Pelorous"
-                  onclick={() => {}}
-                />
-                <Button
-                  content="02 internal structure"
-                  css="button_view"
-                  onclick={() => {}}
-                />
-                <Button
-                  content="03 surface geology"
-                  css="button_view"
-                  onclick={() => {}}
+              <div className="flex flex-col lg:w-[350px]">
+                <PlanetViewDesktop
+                  onViewSelect={handleViewSelect}
+                  color={planetName}
                 />
               </div>
             )}

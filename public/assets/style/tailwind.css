@@ -17,7 +17,7 @@
     @apply h-screen;
   }
   body {
-    @apply bg-BlackPearl text-white;
+    @apply bg-BlackPearl bg-[url('../img/background-stars.svg')] bg-cover text-white;
   }
 }
 
@@ -41,33 +41,33 @@
     @apply font-Antonio text-xl uppercase lg:text-4xl;
   }
   .button_view {
-    @apply mb-3 ml-4 border-[1px] border-solid border-white pl-5 text-left font-Spartan text-[9px] uppercase tracking-widest hover:border-BrightGray hover:bg-BrightGray lg:h-[40px] lg:w-[281px];
+    @apply mb-3 border-[1px] border-solid border-white pl-5 text-left font-Spartan text-[9px] uppercase tracking-widest hover:border-BrightGray hover:bg-BrightGray lg:h-[40px] lg:w-[350px];
   }
   .button_view_mobile {
     @apply border-b-4 border-solid border-BlackPearl pb-4 pt-5 font-Spartan text-xs font-bold uppercase tracking-widest text-white;
   }
   .mercury {
-    @apply hover:border-b-Pelorous;
+    @apply border-b-Pelorous lg:border-none lg:bg-Pelorous;
   }
   .venus {
-    @apply hover:border-b-TulipTree;
+    @apply border-b-TulipTree lg:border-none lg:bg-TulipTree;
   }
   .earth {
-    @apply hover:border-b-PurpleHeart;
+    @apply border-b-PurpleHeart lg:border-none lg:bg-PurpleHeart;
   }
   .mars {
-    @apply hover:border-b-Valencia;
+    @apply border-b-Valencia lg:border-none lg:bg-Valencia;
   }
   .jupiter {
-    @apply hover:border-b-ElectricValencia;
+    @apply border-b-ElectricValencia lg:border-none lg:bg-ElectricValencia;
   }
   .saturn {
-    @apply hover:border-b-Piper;
+    @apply border-b-Piper lg:border-none lg:bg-Piper;
   }
   .uranus {
-    @apply hover:border-b-Java;
+    @apply border-b-Java lg:border-none lg:bg-Java;
   }
   .neptune {
-    @apply hover:border-b-RoyalBlue;
+    @apply border-b-RoyalBlue lg:border-none lg:bg-RoyalBlue;
   }
 }
