@@ -47,27 +47,27 @@
     @apply border-b-4 border-solid border-BlackPearl pb-4 pt-5 font-Spartan text-xs font-bold uppercase tracking-widest text-white;
   }
   .mercury {
-    @apply hover:border-b-Pelorous;
+    @apply border-b-Pelorous;
   }
   .venus {
-    @apply hover:border-b-TulipTree;
+    @apply border-b-TulipTree;
   }
   .earth {
-    @apply hover:border-b-PurpleHeart;
+    @apply border-b-PurpleHeart;
   }
   .mars {
-    @apply hover:border-b-Valencia;
+    @apply border-b-Valencia;
   }
   .jupiter {
-    @apply hover:border-b-ElectricValencia;
+    @apply border-b-ElectricValencia;
   }
   .saturn {
-    @apply hover:border-b-Piper;
+    @apply border-b-Piper;
   }
   .uranus {
-    @apply hover:border-b-Java;
+    @apply border-b-Java;
   }
   .neptune {
-    @apply hover:border-b-RoyalBlue;
+    @apply border-b-RoyalBlue;
   }
 }

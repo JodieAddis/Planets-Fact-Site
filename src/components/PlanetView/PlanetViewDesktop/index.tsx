@@ -4,10 +4,25 @@ import { useState } from "react";
 
 const Component = ({ onViewSelect, color }: ViewProps) => {
   const tabs = ["01 overview", "02 internal structure", "03 surface geology"];
-  const [selectedButton, setSelectedButton] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   const handleButtonClick = (image: string) => {
-    onViewSelect(image);
+    let viewName = "";
+    switch (image) {
+      case "01 overview":
+        viewName = "overview";
+        break;
+      case "02 internal structure":
+        viewName = "structure";
+        break;
+      case "03 surface geology":
+        viewName = "surface";
+        break;
+      default:
+        break;
+    }
+    onViewSelect(viewName);
+    return viewName;
   };
 
   return (
@@ -17,37 +32,15 @@ const Component = ({ onViewSelect, color }: ViewProps) => {
           <Button
             content={tab}
             css={`
-              ${selectedButton === index
-                ? "bg-Pelorous"
-                : "bg-none"} button_view
+              ${selectedTab === index ? "bg-Pelorous" : "bg-none"} button_view
             `}
             onclick={() => {
-              setSelectedButton(index);
+              handleButtonClick(tab);
+              setSelectedTab(index);
             }}
           />
         </div>
       ))}
-      {/* <Button
-        content="01 overview"
-        css={"button_view"}
-        onclick={() => {
-          handleButtonClick("overview");
-        }}
-      />
-      <Button
-        content="02 internal structure"
-        css={"button_view"}
-        onclick={() => {
-          handleButtonClick("structure");
-        }}
-      />
-      <Button
-        content="03 surface geology"
-        css="button_view"
-        onclick={() => {
-          handleButtonClick("surface");
-        }}
-      /> */}
     </>
   );
 };
