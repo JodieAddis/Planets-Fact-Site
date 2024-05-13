@@ -9,6 +9,7 @@ import Jupiter from "./pages/Jupiter";
 import Saturn from "./pages/Saturn";
 import Uranus from "./pages/Uranus";
 import Neptune from "./pages/Neptune";
+import Error404 from "./components/Error404";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -23,7 +24,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           <Route path="/Planets-Fact-Site/saturn" element={<Saturn />} />
           <Route path="/Planets-Fact-Site/uranus" element={<Uranus />} />
           <Route path="/Planets-Fact-Site/neptune" element={<Neptune />} />
-          {/* <Route path="*" element={<Error404 />} /> */}
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
     </BrowserRouter>

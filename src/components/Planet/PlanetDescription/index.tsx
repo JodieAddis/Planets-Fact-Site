@@ -1,12 +1,11 @@
 import IconSource from "../../../icons/IconSource";
 import Heading from "../../../typographies/Heading";
 import Paragraph from "../../../typographies/Paragraph";
-import { loadData } from "../../../utils/loadData";
 
 interface PlanetDescriptionProps {
   name: string;
-  description: string;
-  source: string;
+  description: string | undefined;
+  source: string | undefined;
 }
 
 const Component = ({ name, description, source }: PlanetDescriptionProps) => {

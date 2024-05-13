@@ -1,4 +1,3 @@
-import Button from "../../Button";
 import { loadData } from "../../../utils/loadData";
 import PlanetDescription from "../PlanetDescription";
 import PlanetDetails from "../PlanetDetails";
@@ -21,21 +20,29 @@ const Component = ({ planetName }: PlanetDataProps) => {
     setSelectedView(view);
   };
 
-  let description = planetData.overview.content;
-  let url = planetData.images.planet;
-  let source = planetData.overview.source;
-  let pinUrl = "";
+  let description,
+    url,
+    source,
+    pinUrl = "";
 
   if (planetData) {
-    if (selectedView === "structure") {
-      description = planetData.structure.content;
-      url = planetData.images.internal;
-      source = planetData.structure.source;
-    } else if (selectedView === "surface") {
-      description = planetData.geology.content;
-      url = planetData.images.geology;
-      source = planetData.geology.source;
-      pinUrl = planetData.images.planet;
+    switch (selectedView) {
+      case "structure":
+        description = planetData.structure?.content;
+        url = planetData.images?.internal;
+        source = planetData.structure?.source;
+        break;
+      case "surface":
+        description = planetData.geology?.content;
+        url = planetData.images?.planet;
+        source = planetData.geology?.source;
+        pinUrl = planetData.images?.geology;
+        break;
+      default:
+        description = planetData.overview?.content;
+        url = planetData.images?.planet;
+        source = planetData.overview?.source;
+        break;
     }
   }
 
