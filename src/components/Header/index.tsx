@@ -10,7 +10,9 @@ const Component = () => {
       <Heading
         kind="h1"
         content={"the planets"}
-        css={"ml-8 uppercase font-base text-3xl font-Antonio"}
+        css={
+          "ml-8 md:ml-0 lg:ml-8 uppercase font-base text-3xl font-Antonio md:text-center"
+        }
       />
       {isMobile ? <NavBarMobile /> : <NavBarDesktop />}
     </div>

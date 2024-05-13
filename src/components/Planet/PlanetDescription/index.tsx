@@ -11,18 +11,18 @@ interface PlanetDescriptionProps {
 const Component = ({ name, description, source }: PlanetDescriptionProps) => {
   return (
     <div className="flex flex-col lg:flex-row">
-      <div className="flex flex-col items-center lg:w-[350px] lg:items-start">
+      <div className="flex flex-col items-center md:items-start lg:w-[350px]">
         <Heading
           kind={"h2"}
           content={name}
           css={
-            "font-normal font-Antonio text-center lg:text-left text-4xl lg:text-8xl mb-4 lg:mb-8 uppercase"
+            "font-normal font-Antonio text-center md:text-left text-4xl lg:text-8xl mb-4 lg:mb-8 uppercase"
           }
         />
         <Paragraph
           content={description}
           css={
-            "text-xs lg:text-sm font-normal leading-normal w-[327px] font-Spartan text-center lg:text-left lg:w-content mb-4 lg:mb-8 lg:text-left"
+            "text-xs lg:text-sm font-normal leading-normal w-[327px] font-Spartan text-center md:text-left lg:w-content mb-4 lg:mb-8 lg:text-left"
           }
         />
         <Paragraph

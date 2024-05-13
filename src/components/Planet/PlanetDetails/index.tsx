@@ -27,7 +27,7 @@ const Component = ({
       <div className="details_box">
         <Heading
           kind={"h3"}
-          content={"revolution tile"}
+          content={"revolution time"}
           css={"details_box_heading"}
         />
         <Paragraph content={revolutionTime} css={"details_box_text"} />

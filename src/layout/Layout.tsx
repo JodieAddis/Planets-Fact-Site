@@ -9,7 +9,7 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <header className="mt-6">
+      <header className="mt-6 md:mt-8 lg:mt-6">
         <Header />
         <div className="border-b-solid border-b-[1px] border-b-white pb-6"></div>
       </header>

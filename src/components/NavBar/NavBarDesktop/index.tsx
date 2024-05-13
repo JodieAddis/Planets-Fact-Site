@@ -4,8 +4,8 @@ const Component = () => {
   return (
     <>
       <nav>
-        <ul className="flex uppercase text-black md:flex-row">
-          <li className="navbar_list mx-3">
+        <ul className="flex uppercase text-black md:mt-8 md:flex-row md:justify-around lg:mt-0 ">
+          <li className="navbar_list mx-3 md:ml-6 md:mr-3 lg:mx-3">
             <Link to="/Planets-Fact-Site/">mercury</Link>
           </li>
           <li className="navbar_list mx-3">
@@ -26,7 +26,7 @@ const Component = () => {
           <li className="navbar_list mx-3">
             <Link to="/Planets-Fact-Site/uranus">uranus</Link>
           </li>
-          <li className="navbar_list ml-3 mr-8">
+          <li className="navbar_list ml-3 mr-8 md:mr-6 lg:mr-8">
             <Link to="/Planets-Fact-Site/neptune">nepture</Link>
           </li>
         </ul>

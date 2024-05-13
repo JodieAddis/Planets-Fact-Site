@@ -48,7 +48,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
 
   return (
     <div className="flex flex-col">
-      <section className="flex flex-col justify-center lg:mb-20 lg:mt-32 lg:flex-row">
+      <section className="flex flex-col justify-center md:mt-32 lg:mb-20 lg:flex-row">
         <div className="mb-14 flex flex-col justify-center">
           {isMobile ? (
             <PlanetViewMobile
@@ -64,7 +64,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
             <PlanetImage view={selectedView} url={url} pinUrl={pinUrl} />
           </div>
 
-          <div className="flex flex-col lg:ml-16">
+          <div className="flex flex-col md:mx-3 md:mt-24 md:flex-row md:justify-between lg:mx-0 lg:ml-16 lg:mt-0 lg:flex-col">
             {planetData && (
               <PlanetDescription
                 name={planetData.name}
@@ -85,7 +85,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
           </div>
         </div>
       </section>
-      <section className="mt-6 flex flex-col items-center lg:flex-row">
+      <section className="mt-6 flex flex-col items-center  md:flex-row">
         {planetData && (
           <PlanetDetails
             rotationTime={planetData.rotation}
