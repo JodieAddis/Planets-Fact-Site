@@ -16,7 +16,7 @@ const Component = () => {
           <IconMenu />
         </button>
       ) : (
-        <nav className="absolute top-32 h-screen w-screen bg-BlackPearl">
+        <nav className="absolute top-24 h-screen w-screen bg-BlackPearl">
           <ul className="mx-6 flex flex-col uppercase text-black">
             <NavBarItem name={"mercury"} color={"bg-Pelorous"} page={""} />
             <NavBarItem name={"venus"} color={"bg-TulipTree"} page={"venus"} />

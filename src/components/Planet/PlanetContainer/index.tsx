@@ -85,7 +85,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
           </div>
         </div>
       </section>
-      <section className="mt-6 flex flex-col items-center  md:flex-row">
+      <section className="mt-8 flex flex-col items-center  md:flex-row ">
         {planetData && (
           <PlanetDetails
             rotationTime={planetData.rotation}
