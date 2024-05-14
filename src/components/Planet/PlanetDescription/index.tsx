@@ -22,7 +22,7 @@ const Component = ({ name, description, source }: PlanetDescriptionProps) => {
         <Paragraph
           content={description}
           css={
-            "text-xs leading-relaxed md:text-sm font-normal leading-normal w-[327px] font-Spartan text-center md:text-left lg:w-content mb-4 md:mb-8 lg:text-left"
+            "text-xs leading-relaxed md:text-base font-normal leading-normal w-[327px] font-Spartan text-center md:text-left lg:w-content mb-4 md:mb-8 lg:text-left"
           }
         />
         <Paragraph

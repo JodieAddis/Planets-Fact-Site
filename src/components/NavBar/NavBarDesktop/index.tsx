@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const Component = () => {
   return (
     <>
-      <nav>
-        <ul className="flex uppercase text-black md:mt-8 md:flex-row md:justify-around lg:mt-0 ">
+      <nav className="lg:flex lg:items-center">
+        <ul className="flex uppercase text-black md:mt-8 md:flex-row md:justify-around lg:mt-0">
           <li className="navbar_list mx-3 md:ml-6 md:mr-3 lg:mx-3">
             <Link to="/Planets-Fact-Site/">mercury</Link>
           </li>

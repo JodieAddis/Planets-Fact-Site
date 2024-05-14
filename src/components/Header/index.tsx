@@ -9,7 +9,7 @@ const Component = () => {
     <div className="flex justify-between md:flex-col lg:flex-row">
       <Heading
         kind="h1"
-        content={"the planets"}
+        content="the planets"
         css={
           "ml-8 md:ml-0 lg:ml-8 uppercase font-base text-3xl font-Antonio md:text-center"
         }

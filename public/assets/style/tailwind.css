@@ -32,10 +32,10 @@
     @apply flex flex-row justify-between py-4;
   }
   .planet_image {
-    @apply w-1/3 md:w-3/6 lg:w-5/6;
+    @apply w-1/3 md:w-3/6 lg:w-11/12;
   }
   .details_box {
-    @apply mb-2 flex w-[327px] flex-row items-center justify-between border-[1px] border-solid border-white px-5 py-4 text-left md:mx-2 md:w-[165px] md:flex-col md:items-start lg:mx-4 lg:w-[255px] lg:py-6;
+    @apply mb-2 flex w-[327px] flex-row items-center justify-between border-[1px] border-solid border-white border-opacity-50 px-5 py-4 text-left md:mx-2 md:w-[165px] md:flex-col md:items-start lg:mx-4 lg:w-[255px] lg:py-6;
   }
   .details_box_heading {
     @apply font-Spartan text-[8px] font-bold uppercase tracking-widest text-white text-opacity-50 md:mb-2 md:text-xs lg:mb-0;
@@ -44,7 +44,7 @@
     @apply font-Antonio text-xl uppercase md:text-2xl lg:text-4xl;
   }
   .button_view {
-    @apply mb-3 border-[1px] border-solid border-white pl-5 text-left font-Spartan text-[9px] uppercase tracking-widest hover:border-BrightGray hover:bg-BrightGray md:h-[40px] md:w-[280px] lg:w-[350px];
+    @apply mb-3 border-[1px] border-solid border-white border-opacity-50 pl-5 text-left font-Spartan text-[9px] uppercase tracking-widest hover:border-BrightGray hover:bg-BrightGray md:h-[40px] md:w-[280px] lg:w-[350px];
   }
   .button_view_mobile {
     @apply border-b-4 border-solid border-BlackPearl pb-4 pt-5 font-Spartan text-xs font-bold uppercase tracking-widest text-white;
