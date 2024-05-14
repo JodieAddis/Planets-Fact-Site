@@ -23,51 +23,51 @@ const Component = () => {
           <nav className="absolute top-24 h-screen w-screen bg-BlackPearl pt-4">
             <ul className="mx-6 flex flex-col uppercase text-black">
               <NavBarItem
-                name={"mercury"}
-                color={"bg-Pelorous"}
-                page={""}
+                name="mercury"
+                color="bg-Pelorous"
+                page=""
                 lineColor="bg-white"
               />
               <NavBarItem
-                name={"venus"}
-                color={"bg-TulipTree"}
-                page={"venus"}
+                name="venus"
+                color="bg-TulipTree"
+                page="venus"
                 lineColor="bg-white"
               />
               <NavBarItem
-                name={"earth"}
-                color={"bg-GlacialBlue"}
-                page={"earth"}
+                name="earth"
+                color="bg-GlacialBlue"
+                page="earth"
                 lineColor="bg-white"
               />
               <NavBarItem
-                name={"mars"}
-                color={"bg-Piper"}
-                page={"mars"}
+                name="mars"
+                color="bg-Piper"
+                page="mars"
                 lineColor="bg-white"
               />
               <NavBarItem
-                name={"jupiter"}
-                color={"bg-Tacao"}
-                page={"jupiter"}
+                name="jupiter"
+                color="bg-Tacao"
+                page="jupiter"
                 lineColor="bg-white"
               />
               <NavBarItem
-                name={"saturn"}
-                color={"bg-Goldenrod"}
-                page={"saturn"}
+                name="saturn"
+                color="bg-Goldenrod"
+                page="saturn"
                 lineColor="bg-white"
               />
               <NavBarItem
-                name={"uranus"}
-                color={"bg-Java"}
-                page={"uranus"}
+                name="uranus"
+                color="bg-Java"
+                page="uranus"
                 lineColor="bg-white"
               />
               <NavBarItem
-                name={"neptune"}
-                color={"bg-RoyalBlue"}
-                page={"neptune"}
+                name="neptune"
+                color="bg-RoyalBlue"
+                page="neptune"
                 lineColor="bg-none"
               />
             </ul>

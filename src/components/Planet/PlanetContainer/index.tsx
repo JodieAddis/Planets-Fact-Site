@@ -59,12 +59,12 @@ const Component = ({ planetName }: PlanetDataProps) => {
             <></>
           )}
         </div>
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-center">
-          <div className="lg:mr-16">
+        <div className="flex flex-col lg:w-full lg:flex-row lg:items-center lg:justify-between">
+          <div>
             <PlanetImage view={selectedView} url={url} pinUrl={pinUrl} />
           </div>
 
-          <div className="flex flex-col md:mx-3 md:mt-24 md:flex-row md:justify-between lg:mx-0 lg:ml-16 lg:mt-0 lg:flex-col">
+          <div className="flex flex-col md:mx-3 md:mt-24 md:flex-row lg:mx-0 lg:mt-0 lg:flex-col">
             {planetData && (
               <PlanetDescription
                 name={planetData.name}

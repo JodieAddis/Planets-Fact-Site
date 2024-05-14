@@ -1,8 +1,18 @@
-# React + Vite
+# Planet Fact Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## About
 
-Currently, two official plugins are available:
+Explore our application, which provides a comprehensive listing of the planets within our solar system. Discover detailed information about each planet and visualize various structures using convenient view tabs. Accessible on mobile, tablet, and computer devices, our application offers a seamless experience across multiple platforms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## User Interface Overview
+
+![Desktop View](public/assets/img/desktop_version.png)
+
+## Tech Stack
+
+<img src="https://skillicons.dev/icons?i=html,react,ts,tailwind"/>
+
+## About The Author
+
+- [LinkedIn](https://www.linkedin.com/in/jodieaddis/)
+<!-- - Portfolio -->
