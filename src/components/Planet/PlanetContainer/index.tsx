@@ -1,4 +1,3 @@
-import Button from "../../Button";
 import { loadData } from "../../../utils/loadData";
 import PlanetDescription from "../PlanetDescription";
 import PlanetDetails from "../PlanetDetails";
@@ -21,27 +20,35 @@ const Component = ({ planetName }: PlanetDataProps) => {
     setSelectedView(view);
   };
 
-  let description = planetData.overview.content;
-  let url = planetData.images.planet;
-  let source = planetData.overview.source;
-  let pinUrl = "";
+  let description,
+    url,
+    source,
+    pinUrl = "";
 
   if (planetData) {
-    if (selectedView === "structure") {
-      description = planetData.structure.content;
-      url = planetData.images.internal;
-      source = planetData.structure.source;
-    } else if (selectedView === "surface") {
-      description = planetData.geology.content;
-      url = planetData.images.geology;
-      source = planetData.geology.source;
-      pinUrl = planetData.images.planet;
+    switch (selectedView) {
+      case "structure":
+        description = planetData.structure?.content;
+        url = planetData.images?.internal;
+        source = planetData.structure?.source;
+        break;
+      case "surface":
+        description = planetData.geology?.content;
+        url = planetData.images?.planet;
+        source = planetData.geology?.source;
+        pinUrl = planetData.images?.geology;
+        break;
+      default:
+        description = planetData.overview?.content;
+        url = planetData.images?.planet;
+        source = planetData.overview?.source;
+        break;
     }
   }
 
   return (
     <div className="flex flex-col">
-      <section className="flex flex-col justify-center lg:mb-20 lg:mt-32 lg:flex-row">
+      <section className="flex flex-col justify-center md:mt-32 lg:mb-20 lg:flex-row">
         <div className="mb-14 flex flex-col justify-center">
           {isMobile ? (
             <PlanetViewMobile
@@ -57,7 +64,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
             <PlanetImage view={selectedView} url={url} pinUrl={pinUrl} />
           </div>
 
-          <div className="flex flex-col lg:ml-16">
+          <div className="flex flex-col md:mx-3 md:mt-24 md:flex-row md:justify-between lg:mx-0 lg:ml-16 lg:mt-0 lg:flex-col">
             {planetData && (
               <PlanetDescription
                 name={planetData.name}
@@ -78,7 +85,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
           </div>
         </div>
       </section>
-      <section className="mt-6 flex flex-col items-center lg:flex-row">
+      <section className="mt-8 flex flex-col items-center  md:flex-row ">
         {planetData && (
           <PlanetDetails
             rotationTime={planetData.rotation}

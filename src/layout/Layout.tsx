@@ -9,12 +9,12 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <header className="mt-6">
+      <header className="mt-6 md:mt-8 lg:mt-6">
         <Header />
-        <div className="border-b-solid border-b-[1px] border-b-white pb-6"></div>
+        <div className="border-b-solid border-b-[1px] border-b-white pb-6 md:pb-8 lg:pb-6"></div>
       </header>
       <main className="flex items-center justify-center">{children}</main>
-      <footer className="mb-12 mt-20 flex h-10 items-center justify-center">
+      <footer className="mb-4 mt-10 flex h-10 items-center justify-center lg:mt-20">
         <Footer />
       </footer>
     </>
