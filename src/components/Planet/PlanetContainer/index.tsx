@@ -60,7 +60,7 @@ const Component = ({ planetName }: PlanetDataProps) => {
           )}
         </div>
         <div className="flex flex-col lg:w-full lg:flex-row lg:items-center lg:justify-between">
-          <div>
+          <div className="lg:flex lg:w-full lg:justify-center">
             <PlanetImage view={selectedView} url={url} pinUrl={pinUrl} />
           </div>
 

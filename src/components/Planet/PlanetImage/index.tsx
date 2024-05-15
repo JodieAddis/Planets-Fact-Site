@@ -17,7 +17,7 @@ const Component = ({ view, url, pinUrl }: PlanetImageProps) => {
         <img src={url} alt="planet image" className="planet_image" />
       )}
       {view == "surface" && (
-        <div className="planet_image pmb-10 relative">
+        <div className="planet_image relative mb-10 lg:mb-0">
           <img src={url} alt="planet image" className=" mx-auto" />
           <img
             src={pinUrl}
