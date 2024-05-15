@@ -15,7 +15,7 @@ const Component = ({ name, color, page, lineColor }: NavBarItemProps) => {
         <div className=" flex flex-row">
           <span className={`mr-5 h-5 w-5 rounded-full ${color}`}></span>
           <span className="navbar_list_mobile">
-            <Link to={`/Planets-Fact-Site/${page}`}>{name}</Link>
+            <Link to={`/${page}`}>{name}</Link>
           </span>
         </div>
         <div>
