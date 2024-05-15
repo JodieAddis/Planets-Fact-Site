@@ -16,14 +16,14 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <div>
         <Routes>
-          <Route path="/Planets-Fact-Site/" element={<Mercury />} />
-          <Route path="/Planets-Fact-Site/venus" element={<Venus />} />
-          <Route path="/Planets-Fact-Site/earth" element={<Earth />} />
-          <Route path="/Planets-Fact-Site/mars" element={<Mars />} />
-          <Route path="/Planets-Fact-Site/jupiter" element={<Jupiter />} />
-          <Route path="/Planets-Fact-Site/saturn" element={<Saturn />} />
-          <Route path="/Planets-Fact-Site/uranus" element={<Uranus />} />
-          <Route path="/Planets-Fact-Site/neptune" element={<Neptune />} />
+          <Route path="/" element={<Mercury />} />
+          <Route path="/venus" element={<Venus />} />
+          <Route path="/earth" element={<Earth />} />
+          <Route path="/mars" element={<Mars />} />
+          <Route path="/jupiter" element={<Jupiter />} />
+          <Route path="/saturn" element={<Saturn />} />
+          <Route path="/uranus" element={<Uranus />} />
+          <Route path="/neptune" element={<Neptune />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
