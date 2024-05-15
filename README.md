@@ -8,6 +8,12 @@ Explore our application, which provides a comprehensive listing of the planets w
 
 ![Desktop View](public/assets/img/desktop_version.png)
 
+## Objectives
+
+- [x] View each planet page and toggle between the "Overview", "Internal Structure", and "Surface Geology" tabs
+- [x] View the optimal layout for the app depending on their device's screen size
+- [x] See hover states for all interactive elements on the page
+
 ## Tech Stack
 
 <img src="https://skillicons.dev/icons?i=html,react,ts,tailwind"/>
