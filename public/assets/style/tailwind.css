@@ -31,6 +31,9 @@
   .list_mobile_container {
     @apply flex flex-row justify-between py-4;
   }
+  .bg_navbar_mobile {
+    @apply bg-BlackPearl bg-[url('../img/background-stars.svg')];
+  }
   .planet_image {
     @apply w-1/3 md:w-3/6 lg:w-11/12;
   }
