@@ -1,6 +1,7 @@
 import { useState } from "react";
 import IconMenu from "../../../icons/IconMenu";
 import NavBarItem from "../NavBarItem";
+import Heading from "../../../typographies/Heading";
 
 const Component = () => {
   const [isOpen, setIsOpen] = useState<boolean>(true);
@@ -17,10 +18,18 @@ const Component = () => {
         </button>
       ) : (
         <>
-          <div className="mr-8 flex items-center">
-            <IconMenu color="	#808080" />
+          <div className="bg_navbar_mobile fixed top-0 flex w-screen items-center justify-between py-6">
+            <Heading
+              kind="h1"
+              content="the planets"
+              css={"ml-8 uppercase font-base text-3xl font-Antonio"}
+            />
+            <div className="mr-8">
+              <IconMenu color="	#808080" />
+            </div>
           </div>
-          <nav className="absolute top-24 h-screen w-screen bg-BlackPearl pt-4">
+          <nav className="fixed top-12 mt-4 h-screen w-screen bg-BlackPearl">
+            <div className="border-b-solid border-b-[1px] border-b-white border-opacity-50 pb-5"></div>
             <ul className="mx-6 flex flex-col uppercase text-black">
               <NavBarItem
                 name="mercury"
